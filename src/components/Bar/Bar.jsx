@@ -2,7 +2,7 @@ import React from 'react';
 import { Line } from 'react-chartjs-2';
 import PropTypes from 'prop-types';
 
-const Bar = ({ labelData, bmiData}) => {
+const Bar = ({ labelData, bmiData }) => {
   const data = canvas => {
     const ctx = canvas.getContext('2d');
     const gradient = ctx.createLinearGradient(63, 81, 181, 700);
@@ -21,7 +21,7 @@ const Bar = ({ labelData, bmiData}) => {
           pointHoverRadius: 8,
           pointHoverBorderColor: 'white',
           pointHoverBorderWidth: 2
-        },
+        }
       ]
     };
   };
